@@ -203,6 +203,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. Server-side validation prevents the application from restarting"
                     },
                     Answer = "A"
+                },
+
+                new Question
+                {
+                    Number = 15,
+                    Text = "Which field should be unique for identifying each Student record?",
+                    Choices = new List<string>
+                    {
+                        "A. Student Number",
+                        "B. Student Name",
+                        "C. Section Name",
+                        "D. Course Name"
+                    },
+                    Answer = "A"
                 }
             };
 
