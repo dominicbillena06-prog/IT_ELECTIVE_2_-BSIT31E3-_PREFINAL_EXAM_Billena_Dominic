@@ -273,6 +273,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. 500 Internal Server Error"
                     },
                     Answer = "C"
+                },
+
+                new Question
+                {
+                    Number = 20,
+                    Text = "What should happen if a Student is assigned to the same Section for the same subject more than once?",
+                    Choices = new List<string>
+                    {
+                        "A. The duplicate assignment should be prevented to maintain data integrity",
+                        "B. The Student should automatically be deleted",
+                        "C. A new database should be created",
+                        "D. The Section should automatically be deleted"
+                    },
+                    Answer = "A"
                 }
             };
 
