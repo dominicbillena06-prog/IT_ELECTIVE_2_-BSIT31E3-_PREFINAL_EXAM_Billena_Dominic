@@ -35,6 +35,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. Controller-First"
                     },
                     Answer = "B"
+                },
+
+                new Question
+                {
+                    Number = 3,
+                    Text = "What is the primary purpose of Entity Framework Core (EF Core)?",
+                    Choices = new List<string>
+                    {
+                        "A. To create HTML pages",
+                        "B. To replace the Controller",
+                        "C. To map objects in code to data in a relational database",
+                        "D. To replace the C# compiler"
+                    },
+                    Answer = "C"
                 }
             };
 
