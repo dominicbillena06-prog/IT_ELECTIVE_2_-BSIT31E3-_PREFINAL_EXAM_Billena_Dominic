@@ -49,6 +49,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. To replace the C# compiler"
                     },
                     Answer = "C"
+                },
+
+                new Question
+                {
+                    Number = 4,
+                    Text = "Which EF Core component is responsible for communicating with the database?",
+                    Choices = new List<string>
+                    {
+                        "A. DbContext",
+                        "B. DbSetView",
+                        "C. ControllerContext",
+                        "D. RazorContext"
+                    },
+                    Answer = "A"
                 }
             };
 
