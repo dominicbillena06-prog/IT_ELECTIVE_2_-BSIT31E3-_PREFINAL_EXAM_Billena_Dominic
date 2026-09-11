@@ -9,30 +9,32 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
         {
             var questions = new List<Question>
             {
+                // 1-5: Relational Data Modeling, Model Binding, and Controller Actions
+
                 new Question
                 {
                     Number = 1,
-                    Text = "What is the main problem solved by using a database instead of an in-memory collection?",
+                    Text = "What is the main purpose of a table in a relational database?",
                     Choices = new List<string>
                     {
-                        "A. It makes C# code shorter",
-                        "B. It prevents the application from restarting",
-                        "C. It allows data to persist after the application stops",
-                        "D. It removes the need for MVC"
+                        "A. To store related data in rows and columns",
+                        "B. To display HTML pages",
+                        "C. To execute C# code",
+                        "D. To handle HTTP requests"
                     },
-                    Answer = "C"
+                    Answer = "A"
                 },
 
                 new Question
                 {
                     Number = 2,
-                    Text = "Which approach is being used when an existing database is used to generate EF Core entity classes?",
+                    Text = "Which key uniquely identifies each record in a relational database table?",
                     Choices = new List<string>
                     {
-                        "A. Code-First",
-                        "B. Database-First",
-                        "C. Model-First",
-                        "D. Controller-First"
+                        "A. Foreign key",
+                        "B. Primary key",
+                        "C. Candidate view",
+                        "D. Navigation key"
                     },
                     Answer = "B"
                 },
@@ -40,27 +42,27 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                 new Question
                 {
                     Number = 3,
-                    Text = "What is the primary purpose of Entity Framework Core (EF Core)?",
+                    Text = "Which constraint prevents duplicate values from being stored in a column?",
                     Choices = new List<string>
                     {
-                        "A. To create HTML pages",
-                        "B. To replace the Controller",
-                        "C. To map objects in code to data in a relational database",
-                        "D. To replace the C# compiler"
+                        "A. UNIQUE",
+                        "B. DEFAULT",
+                        "C. CHECK",
+                        "D. NULL"
                     },
-                    Answer = "C"
+                    Answer = "A"
                 },
 
                 new Question
                 {
                     Number = 4,
-                    Text = "Which EF Core component is responsible for communicating with the database?",
+                    Text = "What is Model Binding in ASP.NET Core MVC?",
                     Choices = new List<string>
                     {
-                        "A. DbContext",
-                        "B. DbSetView",
-                        "C. ControllerContext",
-                        "D. RazorContext"
+                        "A. Automatically mapping request data to action parameters or model objects",
+                        "B. Creating database tables from HTML",
+                        "C. Connecting a View directly to a database",
+                        "D. Converting a Controller into a Model"
                     },
                     Answer = "A"
                 },
@@ -68,55 +70,57 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                 new Question
                 {
                     Number = 5,
-                    Text = "What does the following command do? dotnet ef dbcontext scaffold \"ConnectionString\" Microsoft.EntityFrameworkCore.SqlServer -o Models",
+                    Text = "What is the main purpose of a Controller Action in ASP.NET Core MVC?",
                     Choices = new List<string>
                     {
-                        "A. Deletes the database",
-                        "B. Creates a new MVC project",
-                        "C. Generates EF Core models and a DbContext from an existing database",
-                        "D. Starts the application"
+                        "A. To handle HTTP requests and return an appropriate response",
+                        "B. To permanently store data in the database",
+                        "C. To create HTML tags automatically",
+                        "D. To replace the Model"
                     },
-                    Answer = "C"
+                    Answer = "A"
                 },
+
+                // 6-10: ERD, Razor Syntax, and Dynamic Rendering
 
                 new Question
                 {
                     Number = 6,
-                    Text = "Where is the connection string commonly stored in an ASP.NET Core application?",
+                    Text = "What does an Entity-Relationship Diagram (ERD) primarily represent?",
                     Choices = new List<string>
                     {
-                        "A. Program.cs only",
-                        "B. appsettings.json",
-                        "C. Index.cshtml",
-                        "D. Student.cs"
+                        "A. Entities, their attributes, and relationships",
+                        "B. C# program code",
+                        "C. HTML page layouts only",
+                        "D. Computer hardware specifications"
                     },
-                    Answer = "B"
+                    Answer = "A"
                 },
 
                 new Question
                 {
                     Number = 7,
-                    Text = "A Student belongs to exactly one Section, while a Section can have many Students. What type of relationship is this?",
+                    Text = "In an ERD, what does an entity generally represent?",
                     Choices = new List<string>
                     {
-                        "A. One-to-one",
-                        "B. One-to-many",
-                        "C. Many-to-many",
-                        "D. Many-to-one"
+                        "A. A real-world object or concept that can be stored as data",
+                        "B. A programming loop",
+                        "C. A web browser",
+                        "D. A controller action"
                     },
-                    Answer = "B"
+                    Answer = "A"
                 },
 
                 new Question
                 {
                     Number = 8,
-                    Text = "In a Student entity, what does SectionId represent when it references the Section entity?",
+                    Text = "Which symbol is used to begin a C# code expression in a Razor view?",
                     Choices = new List<string>
                     {
-                        "A. Primary key of Student",
-                        "B. Foreign key referencing Section",
-                        "C. Navigation property",
-                        "D. Database connection string"
+                        "A. #",
+                        "B. @",
+                        "C. $",
+                        "D. &"
                     },
                     Answer = "B"
                 },
@@ -124,55 +128,57 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                 new Question
                 {
                     Number = 9,
-                    Text = "What is the purpose of a navigation property in an EF Core entity?",
+                    Text = "Which Razor structure is commonly used to display multiple records dynamically?",
                     Choices = new List<string>
                     {
-                        "A. It stores the database connection string",
-                        "B. It represents a relationship to another entity",
-                        "C. It replaces the primary key",
-                        "D. It creates a new controller"
+                        "A. @foreach",
+                        "B. @database",
+                        "C. @table",
+                        "D. @record"
                     },
-                    Answer = "B"
+                    Answer = "A"
                 },
 
                 new Question
                 {
                     Number = 10,
-                    Text = "What is the purpose of the Include() method in Entity Framework Core?",
+                    Text = "Which Razor statement can be used to display content only when a condition is true?",
                     Choices = new List<string>
                     {
-                        "A. To delete related records",
-                        "B. To load related data along with the main entity",
-                        "C. To create a new database",
-                        "D. To validate user input"
+                        "A. @foreach",
+                        "B. @if",
+                        "C. @model",
+                        "D. @using"
                     },
                     Answer = "B"
                 },
 
+                // 11-15: Normalization, Data Validation, and ModelState
+
                 new Question
                 {
                     Number = 11,
-                    Text = "When should a ViewModel be used when displaying Student and Section information?",
+                    Text = "What is the main goal of database normalization?",
                     Choices = new List<string>
                     {
-                        "A. When the database needs to be deleted",
-                        "B. When combining or shaping data specifically needed by the view",
-                        "C. When creating a new controller",
-                        "D. When replacing Entity Framework Core"
+                        "A. To reduce data redundancy and improve data integrity",
+                        "B. To duplicate data across tables",
+                        "C. To remove relationships between tables",
+                        "D. To store everything in one table"
                     },
-                    Answer = "B"
+                    Answer = "A"
                 },
 
                 new Question
                 {
                     Number = 12,
-                    Text = "What is the benefit of using _context.Students.Include(s => s.Section).ToList()?",
+                    Text = "Which normal form requires each field to contain only atomic values and no repeating groups?",
                     Choices = new List<string>
                     {
-                        "A. It loads the related Section navigation property along with the Students",
-                        "B. It deletes all Section records",
-                        "C. It creates a new Student table",
-                        "D. It validates the Student input"
+                        "A. First Normal Form (1NF)",
+                        "B. Second Normal Form (2NF)",
+                        "C. Third Normal Form (3NF)",
+                        "D. Fourth Normal Form (4NF)"
                     },
                     Answer = "A"
                 },
@@ -180,13 +186,13 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                 new Question
                 {
                     Number = 13,
-                    Text = "What type of validation occurs in the browser before a request is sent to the server?",
+                    Text = "Which normal form requires a table to be in 1NF and have no partial dependencies on a composite primary key?",
                     Choices = new List<string>
                     {
-                        "A. Database validation",
-                        "B. Client-side validation",
-                        "C. Server-side validation",
-                        "D. Controller validation"
+                        "A. 1NF",
+                        "B. 2NF",
+                        "C. 3NF",
+                        "D. BCNF"
                     },
                     Answer = "B"
                 },
@@ -194,55 +200,57 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                 new Question
                 {
                     Number = 14,
-                    Text = "Why is server-side validation still necessary even when client-side validation is used?",
+                    Text = "Which normal form removes transitive dependencies from a table?",
                     Choices = new List<string>
                     {
-                        "A. Client-side validation can be bypassed",
-                        "B. Server-side validation makes HTML pages shorter",
-                        "C. Client-side validation replaces the database",
-                        "D. Server-side validation prevents the application from restarting"
+                        "A. 1NF",
+                        "B. 2NF",
+                        "C. 3NF",
+                        "D. 4NF"
                     },
-                    Answer = "A"
+                    Answer = "C"
                 },
 
                 new Question
                 {
                     Number = 15,
-                    Text = "Which field should be unique for identifying each Student record?",
+                    Text = "What does ModelState.IsValid determine in an ASP.NET Core MVC Controller?",
                     Choices = new List<string>
                     {
-                        "A. Student Number",
-                        "B. Student Name",
-                        "C. Section Name",
-                        "D. Course Name"
+                        "A. Whether the submitted model passed validation",
+                        "B. Whether the database server is online",
+                        "C. Whether the Controller exists",
+                        "D. Whether the View contains HTML"
                     },
                     Answer = "A"
                 },
 
+                // 16-20: SQL, In-Memory Data Storage, and CRUD Operations
+
                 new Question
                 {
                     Number = 16,
-                    Text = "Why should a unique constraint be applied at the database level?",
+                    Text = "Which SQL command is used to retrieve records from a database table?",
                     Choices = new List<string>
                     {
-                        "A. It protects data integrity even if application validation is bypassed",
-                        "B. It makes the application restart faster",
-                        "C. It removes the need for a database",
-                        "D. It automatically creates a controller"
+                        "A. INSERT",
+                        "B. SELECT",
+                        "C. UPDATE",
+                        "D. DELETE"
                     },
-                    Answer = "A"
+                    Answer = "B"
                 },
 
                 new Question
                 {
                     Number = 17,
-                    Text = "What is the purpose of using try/catch in a controller?",
+                    Text = "Which SQL command is used to add a new record to a table?",
                     Choices = new List<string>
                     {
-                        "A. To create database tables",
-                        "B. To catch and handle exceptions that occur during execution",
-                        "C. To replace the Model",
-                        "D. To generate HTML pages"
+                        "A. SELECT",
+                        "B. INSERT",
+                        "C. UPDATE",
+                        "D. DELETE"
                     },
                     Answer = "B"
                 },
@@ -250,43 +258,43 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                 new Question
                 {
                     Number = 18,
-                    Text = "Which ASP.NET Core middleware is commonly used for centralized exception handling?",
+                    Text = "In CRUD operations, which operation represents changing an existing record?",
                     Choices = new List<string>
                     {
-                        "A. UseStaticFiles()",
-                        "B. UseExceptionHandler()",
-                        "C. UseRouting()",
-                        "D. UseAuthorization()"
-                    },
-                    Answer = "B"
-                },
-
-                new Question
-                {
-                    Number = 19,
-                    Text = "What status code should be returned when a requested Student record does not exist?",
-                    Choices = new List<string>
-                    {
-                        "A. 200 OK",
-                        "B. 201 Created",
-                        "C. 404 Not Found",
-                        "D. 500 Internal Server Error"
+                        "A. Create",
+                        "B. Read",
+                        "C. Update",
+                        "D. Delete"
                     },
                     Answer = "C"
                 },
 
                 new Question
                 {
-                    Number = 20,
-                    Text = "What should happen if a Student is assigned to the same Section for the same subject more than once?",
+                    Number = 19,
+                    Text = "Which C# collection can be used to temporarily store multiple objects in memory while an application is running?",
                     Choices = new List<string>
                     {
-                        "A. The duplicate assignment should be prevented to maintain data integrity",
-                        "B. The Student should automatically be deleted",
-                        "C. A new database should be created",
-                        "D. The Section should automatically be deleted"
+                        "A. List<T>",
+                        "B. Database",
+                        "C. SQL Server",
+                        "D. Foreign Key"
                     },
                     Answer = "A"
+                },
+
+                new Question
+                {
+                    Number = 20,
+                    Text = "Which CRUD operation removes an existing record from a collection or data source?",
+                    Choices = new List<string>
+                    {
+                        "A. Create",
+                        "B. Read",
+                        "C. Update",
+                        "D. Delete"
+                    },
+                    Answer = "D"
                 }
             };
 
