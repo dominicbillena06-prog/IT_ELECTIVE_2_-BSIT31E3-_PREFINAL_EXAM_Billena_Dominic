@@ -189,6 +189,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. Controller validation"
                     },
                     Answer = "B"
+                },
+
+                new Question
+                {
+                    Number = 14,
+                    Text = "Why is server-side validation still necessary even when client-side validation is used?",
+                    Choices = new List<string>
+                    {
+                        "A. Client-side validation can be bypassed",
+                        "B. Server-side validation makes HTML pages shorter",
+                        "C. Client-side validation replaces the database",
+                        "D. Server-side validation prevents the application from restarting"
+                    },
+                    Answer = "A"
                 }
             };
 
