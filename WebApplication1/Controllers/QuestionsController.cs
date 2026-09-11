@@ -91,6 +91,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. Student.cs"
                     },
                     Answer = "B"
+                },
+
+                new Question
+                {
+                    Number = 7,
+                    Text = "A Student belongs to exactly one Section, while a Section can have many Students. What type of relationship is this?",
+                    Choices = new List<string>
+                    {
+                        "A. One-to-one",
+                        "B. One-to-many",
+                        "C. Many-to-many",
+                        "D. Many-to-one"
+                    },
+                    Answer = "B"
                 }
             };
 
