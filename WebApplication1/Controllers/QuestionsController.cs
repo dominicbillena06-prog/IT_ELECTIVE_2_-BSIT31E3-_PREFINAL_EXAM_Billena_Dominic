@@ -119,6 +119,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. Database connection string"
                     },
                     Answer = "B"
+                },
+
+                new Question
+                {
+                    Number = 9,
+                    Text = "What is the purpose of a navigation property in an EF Core entity?",
+                    Choices = new List<string>
+                    {
+                        "A. It stores the database connection string",
+                        "B. It represents a relationship to another entity",
+                        "C. It replaces the primary key",
+                        "D. It creates a new controller"
+                    },
+                    Answer = "B"
                 }
             };
 
