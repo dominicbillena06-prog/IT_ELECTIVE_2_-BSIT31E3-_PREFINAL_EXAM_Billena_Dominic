@@ -63,6 +63,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. RazorContext"
                     },
                     Answer = "A"
+                },
+
+                new Question
+                {
+                    Number = 5,
+                    Text = "What does the following command do? dotnet ef dbcontext scaffold \"ConnectionString\" Microsoft.EntityFrameworkCore.SqlServer -o Models",
+                    Choices = new List<string>
+                    {
+                        "A. Deletes the database",
+                        "B. Creates a new MVC project",
+                        "C. Generates EF Core models and a DbContext from an existing database",
+                        "D. Starts the application"
+                    },
+                    Answer = "C"
                 }
             };
 
