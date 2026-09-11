@@ -245,6 +245,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. To generate HTML pages"
                     },
                     Answer = "B"
+                },
+
+                new Question
+                {
+                    Number = 18,
+                    Text = "Which ASP.NET Core middleware is commonly used for centralized exception handling?",
+                    Choices = new List<string>
+                    {
+                        "A. UseStaticFiles()",
+                        "B. UseExceptionHandler()",
+                        "C. UseRouting()",
+                        "D. UseAuthorization()"
+                    },
+                    Answer = "B"
                 }
             };
 
