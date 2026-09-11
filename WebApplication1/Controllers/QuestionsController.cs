@@ -259,6 +259,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. UseAuthorization()"
                     },
                     Answer = "B"
+                },
+
+                new Question
+                {
+                    Number = 19,
+                    Text = "What status code should be returned when a requested Student record does not exist?",
+                    Choices = new List<string>
+                    {
+                        "A. 200 OK",
+                        "B. 201 Created",
+                        "C. 404 Not Found",
+                        "D. 500 Internal Server Error"
+                    },
+                    Answer = "C"
                 }
             };
 
