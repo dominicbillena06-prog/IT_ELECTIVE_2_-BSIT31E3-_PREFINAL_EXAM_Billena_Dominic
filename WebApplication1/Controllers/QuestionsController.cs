@@ -231,6 +231,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. It automatically creates a controller"
                     },
                     Answer = "A"
+                },
+
+                new Question
+                {
+                    Number = 17,
+                    Text = "What is the purpose of using try/catch in a controller?",
+                    Choices = new List<string>
+                    {
+                        "A. To create database tables",
+                        "B. To catch and handle exceptions that occur during execution",
+                        "C. To replace the Model",
+                        "D. To generate HTML pages"
+                    },
+                    Answer = "B"
                 }
             };
 
