@@ -175,6 +175,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. It validates the Student input"
                     },
                     Answer = "A"
+                },
+
+                new Question
+                {
+                    Number = 13,
+                    Text = "What type of validation occurs in the browser before a request is sent to the server?",
+                    Choices = new List<string>
+                    {
+                        "A. Database validation",
+                        "B. Client-side validation",
+                        "C. Server-side validation",
+                        "D. Controller validation"
+                    },
+                    Answer = "B"
                 }
             };
 
