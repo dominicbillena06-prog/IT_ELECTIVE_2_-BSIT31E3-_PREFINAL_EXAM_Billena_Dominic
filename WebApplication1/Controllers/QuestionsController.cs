@@ -133,6 +133,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. It creates a new controller"
                     },
                     Answer = "B"
+                },
+
+                new Question
+                {
+                    Number = 10,
+                    Text = "What is the purpose of the Include() method in Entity Framework Core?",
+                    Choices = new List<string>
+                    {
+                        "A. To delete related records",
+                        "B. To load related data along with the main entity",
+                        "C. To create a new database",
+                        "D. To validate user input"
+                    },
+                    Answer = "B"
                 }
             };
 
