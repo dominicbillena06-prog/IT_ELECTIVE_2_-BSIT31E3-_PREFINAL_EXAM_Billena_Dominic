@@ -161,6 +161,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. When replacing Entity Framework Core"
                     },
                     Answer = "B"
+                },
+
+                new Question
+                {
+                    Number = 12,
+                    Text = "What is the benefit of using _context.Students.Include(s => s.Section).ToList()?",
+                    Choices = new List<string>
+                    {
+                        "A. It loads the related Section navigation property along with the Students",
+                        "B. It deletes all Section records",
+                        "C. It creates a new Student table",
+                        "D. It validates the Student input"
+                    },
+                    Answer = "A"
                 }
             };
 
