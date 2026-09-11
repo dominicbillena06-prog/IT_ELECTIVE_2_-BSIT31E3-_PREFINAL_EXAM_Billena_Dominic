@@ -4,27 +4,124 @@
     ViewData["Title"] = "Prefinals Examination";
 }
 
-<div class="text-center mb-4">
-    <h1>IT ELECTIVE 2</h1>
-    <h2>Web System and Technologies</h2>
-    <h4>Dominic Billena</h4>
-    <h5>BSIT31A3</h5>
-</div>
+<div class="exam-page">
 
-<hr />
+    <!-- Hero Section -->
+    <section class="exam-hero">
+        <div class="hero-content">
+            <div class="course-badge">IT ELECTIVE 2</div>
 
-<h2>Prefinals Examination</h2>
+            <h1>Web System and Technologies</h1>
 
-@foreach (var question in Model)
-{
-    <div class="mb-4">
-        <h4>@question.Number. @question.Text</h4>
+            <p class="hero-subtitle">
+                Prefinals Examination
+            </p>
 
-        @foreach (var choice in question.Choices)
+            <div class="student-info">
+                <div>
+                    <span class="info-label">Student</span>
+                    <strong>Dominic Billena</strong>
+                </div>
+
+                <div>
+                    <span class="info-label">Section</span>
+                    <strong>BSIT31A3</strong>
+                </div>
+
+                <div>
+                    <span class="info-label">Items</span>
+                    <strong>20 Questions</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructions -->
+    <section class="instruction-card">
+        <div class="instruction-icon">✓</div>
+
+        <div>
+            <h3>Prefinals Examination</h3>
+            <p>
+                Review each question and check the correct answer provided below.
+            </p>
+        </div>
+    </section>
+
+    <!-- Questions -->
+    <div class="questions-container">
+
+        @foreach (var question in Model)
         {
-            <p>@choice</p>
+            string sectionTitle = "";
+
+            if (question.Number <= 5)
+            {
+                sectionTitle = "Relational Data Modeling & Model Binding";
+            }
+            else if (question.Number <= 10)
+            {
+                sectionTitle = "ERD, Razor Syntax & Dynamic Rendering";
+            }
+            else if (question.Number <= 15)
+            {
+                sectionTitle = "Normalization, Validation & ModelState";
+            }
+            else
+            {
+                sectionTitle = "SQL, In-Memory Data & CRUD";
+            }
+
+            <article class="question-card">
+
+                <div class="question-header">
+
+                    <div class="question-number">
+                        @question.Number
+                    </div>
+
+                    <div class="question-topic">
+                        <span>Question @question.Number</span>
+                        <small>@sectionTitle</small>
+                    </div>
+
+                </div>
+
+                <h2 class="question-text">
+                    @question.Text
+                </h2>
+
+                <div class="choices">
+
+                    @foreach (var choice in question.Choices)
+                    {
+                        <div class="choice">
+                            @choice
+                        </div>
+                    }
+
+                </div>
+
+                <div class="answer-box">
+                    <span class="answer-label">Correct Answer</span>
+                    <strong>@question.Answer</strong>
+                </div>
+
+            </article>
         }
 
-        <strong>Answer: @question.Answer</strong>
     </div>
-}
+
+    <!-- Footer Message -->
+    <div class="completion-card">
+        <div class="completion-icon">✓</div>
+
+        <div>
+            <h3>End of Examination</h3>
+            <p>
+                You have reached the end of the 20-question examination.
+            </p>
+        </div>
+    </div>
+
+</div>
