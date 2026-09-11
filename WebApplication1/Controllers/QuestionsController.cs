@@ -105,6 +105,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. Many-to-one"
                     },
                     Answer = "B"
+                },
+
+                new Question
+                {
+                    Number = 8,
+                    Text = "In a Student entity, what does SectionId represent when it references the Section entity?",
+                    Choices = new List<string>
+                    {
+                        "A. Primary key of Student",
+                        "B. Foreign key referencing Section",
+                        "C. Navigation property",
+                        "D. Database connection string"
+                    },
+                    Answer = "B"
                 }
             };
 
