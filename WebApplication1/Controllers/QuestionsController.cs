@@ -147,6 +147,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. To validate user input"
                     },
                     Answer = "B"
+                },
+
+                new Question
+                {
+                    Number = 11,
+                    Text = "When should a ViewModel be used when displaying Student and Section information?",
+                    Choices = new List<string>
+                    {
+                        "A. When the database needs to be deleted",
+                        "B. When combining or shaping data specifically needed by the view",
+                        "C. When creating a new controller",
+                        "D. When replacing Entity Framework Core"
+                    },
+                    Answer = "B"
                 }
             };
 
