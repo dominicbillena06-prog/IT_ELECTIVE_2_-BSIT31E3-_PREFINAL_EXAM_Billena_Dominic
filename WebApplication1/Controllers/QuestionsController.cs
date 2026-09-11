@@ -217,6 +217,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. Course Name"
                     },
                     Answer = "A"
+                },
+
+                new Question
+                {
+                    Number = 16,
+                    Text = "Why should a unique constraint be applied at the database level?",
+                    Choices = new List<string>
+                    {
+                        "A. It protects data integrity even if application validation is bypassed",
+                        "B. It makes the application restart faster",
+                        "C. It removes the need for a database",
+                        "D. It automatically creates a controller"
+                    },
+                    Answer = "A"
                 }
             };
 
