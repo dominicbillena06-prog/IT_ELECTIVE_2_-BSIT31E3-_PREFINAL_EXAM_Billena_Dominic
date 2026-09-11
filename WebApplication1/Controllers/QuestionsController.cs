@@ -77,6 +77,20 @@ namespace IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Controllers
                         "D. Starts the application"
                     },
                     Answer = "C"
+                },
+
+                new Question
+                {
+                    Number = 6,
+                    Text = "Where is the connection string commonly stored in an ASP.NET Core application?",
+                    Choices = new List<string>
+                    {
+                        "A. Program.cs only",
+                        "B. appsettings.json",
+                        "C. Index.cshtml",
+                        "D. Student.cs"
+                    },
+                    Answer = "B"
                 }
             };
 
