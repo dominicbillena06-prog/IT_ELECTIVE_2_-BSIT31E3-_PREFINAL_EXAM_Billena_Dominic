@@ -1,0 +1,30 @@
+﻿@model List<IT_ELECTIVE_2_BSIT31A3_PREFINAL_EXAM_Billena_Dominic.Models.Question>
+
+@{
+    ViewData["Title"] = "Prefinals Examination";
+}
+
+<div class="text-center mb-4">
+    <h1>IT ELECTIVE 2</h1>
+    <h2>Web System and Technologies</h2>
+    <h4>Dominic Billena</h4>
+    <h5>BSIT31A3</h5>
+</div>
+
+<hr />
+
+<h2>Prefinals Examination</h2>
+
+@foreach (var question in Model)
+{
+    <div class="mb-4">
+        <h4>@question.Number. @question.Text</h4>
+
+        @foreach (var choice in question.Choices)
+        {
+            <p>@choice</p>
+        }
+
+        <strong>Answer: @question.Answer</strong>
+    </div>
+}
